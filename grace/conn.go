@@ -27,7 +27,6 @@ func (c *graceConn) Close() (err error) {
 		}
 	}()
 
-	// diff from here
 	c.m.Lock()
 	if c.closed {
 		c.m.Unlock()
