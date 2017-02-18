@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/astaxie/beego/context"
+	"github.com/ofshellohicy/beego/context"
 )
 
 func TestGetInt(t *testing.T) {

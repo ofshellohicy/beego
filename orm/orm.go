@@ -19,7 +19,7 @@
 //
 //	import (
 //		"fmt"
-//		"github.com/astaxie/beego/orm"
+//		"github.com/ofshellohicy/beego/orm"
 //		_ "github.com/go-sql-driver/mysql" // import your used driver
 //	)
 //

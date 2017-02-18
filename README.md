@@ -12,13 +12,13 @@ More info [beego.me](http://beego.me)
 ##Quick Start
 ######Download and install
 
-    go get github.com/astaxie/beego
+    go get github.com/ofshellohicy/beego
 
 ######Create file `hello.go`
 ```go
 package main
 
-import "github.com/astaxie/beego"
+import "github.com/ofshellohicy/beego"
 
 func main(){
     beego.Run()

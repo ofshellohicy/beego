@@ -27,7 +27,7 @@ more features please read the docs
 
 **Install:**
 
-	go get github.com/astaxie/beego/orm
+	go get github.com/ofshellohicy/beego/orm
 
 ## Changelog
 
@@ -45,7 +45,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/astaxie/beego/orm"
+	"github.com/ofshellohicy/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // import your used driver
 )
 

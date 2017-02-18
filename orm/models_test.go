@@ -444,7 +444,7 @@ tidb: https://github.com/pingcap/tidb
 
 usage:
 
-go get -u github.com/astaxie/beego/orm
+go get -u github.com/ofshellohicy/beego/orm
 go get -u github.com/go-sql-driver/mysql
 go get -u github.com/mattn/go-sqlite3
 go get -u github.com/lib/pq
@@ -454,25 +454,25 @@ go get -u github.com/pingcap/tidb
 mysql -u root -e 'create database orm_test;'
 export ORM_DRIVER=mysql
 export ORM_SOURCE="root:@/orm_test?charset=utf8"
-go test -v github.com/astaxie/beego/orm
+go test -v github.com/ofshellohicy/beego/orm
 
 
 #### Sqlite3
 export ORM_DRIVER=sqlite3
 export ORM_SOURCE='file:memory_test?mode=memory'
-go test -v github.com/astaxie/beego/orm
+go test -v github.com/ofshellohicy/beego/orm
 
 
 #### PostgreSQL
 psql -c 'create database orm_test;' -U postgres
 export ORM_DRIVER=postgres
 export ORM_SOURCE="user=postgres dbname=orm_test sslmode=disable"
-go test -v github.com/astaxie/beego/orm
+go test -v github.com/ofshellohicy/beego/orm
 
 #### TiDB
 export ORM_DRIVER=tidb
 export ORM_SOURCE='memory://test/test'
-go test -v github.com/astaxie/beego/orm
+go test -v github.com/ofshellohicy/beego/orm
 
 `)
 		os.Exit(2)
