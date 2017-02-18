@@ -18,7 +18,7 @@ import (
 	"net/http"
 	"strings"
 
-	beecontext "github.com/astaxie/beego/context"
+	beecontext "github.com/ofshellohicy/beego/context"
 )
 
 type namespaceCond func(*beecontext.Context) bool
