@@ -37,6 +37,7 @@ func (gl *graceListener) Accept() (c net.Conn, err error) {
 	tc.SetKeepAlive(true)
 	tc.SetKeepAlivePeriod(3 * time.Minute)
 
+	// diff from here
 	c = &graceConn{
 		Conn:   tc,
 		server: gl.server,
@@ -44,6 +45,14 @@ func (gl *graceListener) Accept() (c net.Conn, err error) {
 
 	gl.server.wg.Add(1)
 	return
+
+	// the following is modify by ofshellohicy
+	// gl.server.wg.Add(1)
+	// c = graceConn{
+	// Conn:   tc,
+	// server: gl.server,
+	// }
+	// return
 }
 
 func (gl *graceListener) Close() error {

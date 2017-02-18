@@ -27,6 +27,7 @@ func (c *graceConn) Close() (err error) {
 		}
 	}()
 
+	// diff from here
 	c.m.Lock()
 	if c.closed {
 		c.m.Unlock()
@@ -36,4 +37,13 @@ func (c *graceConn) Close() (err error) {
 	c.closed = true
 	c.m.Unlock()
 	return c.Conn.Close()
+
+	// the following is modify by ofshellohicy
+	// err = c.Conn.Close()
+	// if err == nil {
+	// 	c.server.wg.Done()
+	// } else {
+	// 	log.Panicln("graceConn error:", err)
+	// }
+	// return err
 }
