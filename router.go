@@ -593,9 +593,9 @@ func (p *ControllerRegister) geturl(t *Tree, url, controllName, methodName strin
 func (p *ControllerRegister) execFilter(context *beecontext.Context, urlPath string, pos int) (started bool) {
 	var preFilterParams map[string]string
 	for _, filterR := range p.filters[pos] {
-		if filterR.returnOnOutput && context.ResponseWriter.Started {
-			return true
-		}
+		// if filterR.returnOnOutput && context.ResponseWriter.Started {
+		// 	return true
+		// }
 		if filterR.resetParams {
 			preFilterParams = context.Input.Params()
 		}
