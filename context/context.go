@@ -175,8 +175,9 @@ func (ctx *Context) CheckXSRFCookie() bool {
 //started set to true if response was written to then don't execute other handler
 type Response struct {
 	http.ResponseWriter
-	Started bool
-	Status  int
+	Started  bool
+	Status   int
+	Duration time.Duration
 }
 
 func (r *Response) reset(rw http.ResponseWriter) {
