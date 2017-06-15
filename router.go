@@ -827,7 +827,6 @@ func (p *ControllerRegister) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 	}
 
 Admin:
-	context.ResponseWriter.Duration = time.Since(startTime)
 	//admin module record QPS
 	if BConfig.Listen.EnableAdmin {
 		timeDur := time.Since(startTime)
