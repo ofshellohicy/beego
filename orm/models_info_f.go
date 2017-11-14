@@ -192,7 +192,7 @@ checkType:
 		}
 		fieldType = f.FieldType()
 		if fieldType&IsRelField > 0 {
-			err = fmt.Errorf("unsupport type custom field, please refer to https://github.com/astaxie/beego/blob/master/orm/models_fields.go#L24-L42")
+			err = fmt.Errorf("unsupport type custom field, please refer to https://github.com/ofshellohicy/beego/blob/master/orm/models_fields.go#L24-L42")
 			goto end
 		}
 	default:

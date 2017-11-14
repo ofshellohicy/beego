@@ -16,7 +16,7 @@
 // Simple Usage:
 //	import(
 //		"github.com/astaxie/beego"
-//		"github.com/astaxie/beego/plugins/authz"
+//		"github.com/ofshellohicy/beego/plugins/authz"
 //		"github.com/casbin/casbin"
 //	)
 //
@@ -40,10 +40,11 @@
 package authz
 
 import (
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/context"
-	"github.com/casbin/casbin"
 	"net/http"
+
+	"github.com/astaxie/beego"
+	"github.com/casbin/casbin"
+	"github.com/ofshellohicy/beego/context"
 )
 
 // NewAuthorizer returns the authorizer.

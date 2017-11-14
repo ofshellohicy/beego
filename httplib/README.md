@@ -94,4 +94,4 @@ httplib support mutil file upload, use `req.PostFile()`
 
 See godoc for further documentation and examples.
 
-* [godoc.org/github.com/astaxie/beego/httplib](https://godoc.org/github.com/astaxie/beego/httplib)
+* [godoc.org/github.com/ofshellohicy/beego/httplib](https://godoc.org/github.com/ofshellohicy/beego/httplib)
