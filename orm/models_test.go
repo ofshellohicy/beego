@@ -293,7 +293,7 @@ type Post struct {
 	Content string    `orm:"type(text)"`
 	Created time.Time `orm:"auto_now_add"`
 	Updated time.Time `orm:"auto_now"`
-	Tags    []*Tag    `orm:"rel(m2m);rel_through(github.com/astaxie/beego/orm.PostTags)"`
+	Tags    []*Tag    `orm:"rel(m2m);rel_through(github.com/ofshellohicy/beego/orm.PostTags)"`
 }
 
 func (u *Post) TableIndex() [][]string {
@@ -351,7 +351,7 @@ type Group struct {
 type Permission struct {
 	ID     int `orm:"column(id)"`
 	Name   string
-	Groups []*Group `orm:"rel(m2m);rel_through(github.com/astaxie/beego/orm.GroupPermissions)"`
+	Groups []*Group `orm:"rel(m2m);rel_through(github.com/ofshellohicy/beego/orm.GroupPermissions)"`
 }
 
 type GroupPermissions struct {
